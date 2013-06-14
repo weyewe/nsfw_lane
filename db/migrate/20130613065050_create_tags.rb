@@ -4,6 +4,7 @@ class CreateTags < ActiveRecord::Migration
       t.string :name 
       
       t.string :last_parsed_reddit_name 
+      t.integer :update_case , :default => UPDATE_CASE[:morning]
 
       t.timestamps
     end

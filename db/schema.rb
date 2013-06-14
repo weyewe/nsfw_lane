@@ -35,8 +35,9 @@ ActiveRecord::Schema.define(:version => 20130613065102) do
   create_table "tags", :force => true do |t|
     t.string   "name"
     t.string   "last_parsed_reddit_name"
-    t.datetime "created_at",              :null => false
-    t.datetime "updated_at",              :null => false
+    t.integer  "update_case",             :default => 1
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
   end
 
 end

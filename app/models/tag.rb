@@ -1,5 +1,37 @@
+=begin
+# morning tag: Hotchickswithtattoos  hairbra, HandBra ,
+  tits, 
+  girlsontheirbacks, selfshots, downblouse , hairypussy , GroupOfNudeGirls , Smallnipples, FuckMarryorKill, 
+  shewantstofuck ,  , upskirt , cellshots , randomsexiness , EWITB, Mooning, Public , onoffceleb, 
+  nippleripple, cat_girls, iWantToFuckHer , agedlikefinewine, treatemright , RealGirls, GonewildAlbums, gonewildhairy,
+  PublicFlashing, happygaps, GirlsOnToilets,collegesluts,  CollegeAmateurs, nsfw_young, 
+  , Upskirt, toplessamateurs, perfectbabes, 
+  curvy,  gonewild, 
+  
+#awesome morning
+  nsfw, Nipslips, DrunkGirls, OnOff, nipples, laundryday, happygirls, Christiangirls,
+  camwhores, HappyEmbarrassedGirls,FlashingGirls
+  
+#awesome afternoon
+  cougars, milf , MatureWomen, Unashamed, 
+  
+#awesome evening
+O_Faces, 
+  
+
+#afternoon tag 
+  grool, Stacked, weddingringsshowing , hotwife, Tushy,  TheHangingBoobs, wifesharing,
+  momsgonewild, femalesgonewild, SpreadEagle, 
+  
+#evening tag
+  openholes, pink, vagina, analholes, gape, cumsluts, buttsharpies, 
+  
+  
+  
+=end
+
 class Tag < ActiveRecord::Base
-  attr_accessible :name # , :body
+  attr_accessible :name, :update_case  # , :body
   # this tag will be doing the parsing 
   
   has_many :posts 

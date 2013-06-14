@@ -32,3 +32,10 @@ IMAGE_ASSET_URL = {
 }
 
 
+
+
+UPDATE_CASE = {
+  :morning => 1 ,
+  :afternoon => 2 , 
+  :evening => 3 
+}
