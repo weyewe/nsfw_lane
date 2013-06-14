@@ -50,8 +50,10 @@
 	
 	
 	<div class="blog clearfix">
-		<div class="span6 img-polaroid blog-img" style='text-align:center;'>
-			<%= paginate @posts, :theme => 'twitter-bootstrap' %>
+		<div class="span6 img-polaroid blog-img" style='text-align:center; padding: 20px 0;'>
+			<%#= paginate @posts, :theme => 'twitter-bootstrap' %>
+		 
+			<%= link_to_next_page @posts, 'Next Page', :theme => 'twitter-bootstrap', :style =>"border: 1px solid rgb(220,220,220); padding: 10px 5px; font-weight: bold;" %>
 		</div>
 	</div><!--end: blog -->
 
