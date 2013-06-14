@@ -2,9 +2,9 @@
 
 /* -------------------- animate icon --------------------- */
 
-animationHover('#my-icon-1', 'fadeInUp');
-animationHover('#my-icon-2', 'fadeInUp');
-animationHover('#my-icon-3', 'fadeInUp');
+// animationHover('#my-icon-1', 'fadeInUp');
+// animationHover('#my-icon-2', 'fadeInUp');
+// animationHover('#my-icon-3', 'fadeInUp');
 
 function animationHover(element, animation){
 element = $(element);
@@ -139,8 +139,8 @@ function animationClick(element, animation){
 /* -------------------- fade in --------------------- */
 
 $(document).ready(function() {
-$('body').css('display', 'none');
-$('body').fadeIn(1000);
+// $('body').css('display', 'none');
+// $('body').fadeIn(1000);
 
 // $('.link').click(function() {
 // event.preventDefault();
