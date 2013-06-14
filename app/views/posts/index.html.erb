@@ -1,0 +1,61 @@
+	<% @posts.each do |post| %>
+	
+		<!--start: blog -->
+		<div class="blog clearfix">
+			<div class="span6 img-polaroid blog-img" style='text-align:center;'>
+				<a href="post.html">
+					<% post.pics.each do |pic| %>
+						<%= image_tag pic.url , :style => "max-height: 400px;"%>
+					<% end %> 
+					
+						<!-- <img class="" alt="content" src="img/large/1.jpg"> -->
+				</a>
+				<!-- <div class="marker"><i class="icon-bookmark"></i></div>  -->
+	    </div>
+
+	        <div class="span6 blog-content">    
+	            <div class="span5 blog-title">    
+	                <a href="post.html"><h4><%= post.reddit_title %></h4></a>
+					<ul class="icons">
+						<li><a href="#"><i class="icon-picture"></i> <%= post.pics.count %></a></li>
+						<li><a href="#"><i class="icon-tag"></i><%= post.tag.name %></a></li>
+						<!-- <li><a href="#"><i class="icon-share-alt"></i> 24 Shares</a></li> -->
+					</ul>
+				</div>
+				
+				
+				<!-- <div class="span3 blog-info">
+		    	<a href="post.html">
+						<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+					</a>
+		    </div> -->
+
+				<div class="span6 tag clearfix">
+					<!-- <ul>
+						<li><a href="#"><i class="icon-tag"></i> Bootstrap</a></li>
+						<li><a href="#"><i class="icon-tag"></i> Snippet</a></li>
+						<li><a href="#"><i class="icon-tag"></i> Html5</a></li>
+						<li><a href="#"><i class="icon-tag"></i> CSS3</a></li>
+						<li><a href="#"><i class="icon-tag"></i> Jquery</a></li>
+					</ul> -->
+				</div>
+			</div>
+			
+			
+   		 </div><!--end: blog -->
+
+
+ 
+	<% end %>
+	
+	
+	<div class="blog clearfix">
+		<div class="span6 img-polaroid blog-img" style='text-align:center;'>
+			<%= paginate @posts, :theme => 'twitter-bootstrap' %>
+		</div>
+	</div><!--end: blog -->
+
+
+	
+	
+	
