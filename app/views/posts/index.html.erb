@@ -3,22 +3,25 @@
 		<!--start: blog -->
 		<div class="blog clearfix">
 			<div class="span6 img-polaroid blog-img" style='text-align:center;'>
-				<a href="post.html">
+				<!-- <a href="post.html"> -->
 					<% post.pics.each do |pic| %>
 						<%= image_tag pic.url , :style => "max-height: 400px;"%>
 					<% end %> 
 					
 						<!-- <img class="" alt="content" src="img/large/1.jpg"> -->
-				</a>
+				<!-- </a> -->
 				<!-- <div class="marker"><i class="icon-bookmark"></i></div>  -->
 	    </div>
 
 	        <div class="span6 blog-content">    
 	            <div class="span5 blog-title">    
-	                <a href="post.html"><h4><%= post.reddit_title %></h4></a>
+	                 <!-- <a href="post.html"><h4><%= post.reddit_title %></h4></a> -->
+									<h4><%= post.reddit_title %></h4>
 					<ul class="icons">
-						<li><a href="#"><i class="icon-picture"></i> <%= post.pics.count %></a></li>
-						<li><a href="#"><i class="icon-tag"></i><%= post.tag.name %></a></li>
+						<!-- <li><a href="#"><i class="icon-picture"></i> <%= post.pics.count %></a></li> -->
+						<li><i class="icon-picture"></i> <%= post.pics.count %></li>
+						<!-- <li><a href="#"><i class="icon-tag"></i><%= post.tag.name %></a></li> -->
+						<li><i class="icon-tag"></i><%= post.tag.name %></li>
 						<!-- <li><a href="#"><i class="icon-share-alt"></i> 24 Shares</a></li> -->
 					</ul>
 				</div>
