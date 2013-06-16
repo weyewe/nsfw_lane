@@ -136,11 +136,15 @@ time_15_tags.each do |tag_name|
   Tag.create :name => tag_name, :update_case => UPDATE_CASE[:time_15]
 end
 
-time_16_tags = %w[ bathing NoTorso Tanlines amateurteen asstastic ]
+time_16_tags = %w[ bathing NoTorso Tanlines amateurteen asstastic  gonewildcurvy]
 
 time_16_tags.each do |tag_name|      
   Tag.create :name => tag_name, :update_case => UPDATE_CASE[:time_16]
 end
+
+
+
+
 
 time_17_tags = %w[ LabiaGW camporn  NightlySex AsianAsshole ]
 
