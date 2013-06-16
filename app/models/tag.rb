@@ -77,28 +77,31 @@ class Tag < ActiveRecord::Base
   
   
   def update_posts
+    begin
+      parsed_json = self.get_latest_posts 
     
-    parsed_json = self.get_latest_posts 
     
-    
-    if parsed_json['data']['children'].length != 0
-      # update the last extracted reddit post 
-      first_data = parsed_json['data']['children'].first
-      self.last_parsed_reddit_name = first_data['data']['name'] 
-      self.save 
+      if parsed_json['data']['children'].length != 0
+        # update the last extracted reddit post 
+        first_data = parsed_json['data']['children'].first
+        self.last_parsed_reddit_name = first_data['data']['name'] 
+        self.save 
       
       
-      parsed_json['data']['children'].each do |post_data|
-        next if Post.find_by_reddit_name( post_data['data']['name'])
+        parsed_json['data']['children'].each do |post_data|
+          next if Post.find_by_reddit_name( post_data['data']['name'])
           
-        if Post.is_direct_image_link?(  post_data['data']['url'] )
-          Post.create_with_direct_image_link( self, post_data ) 
-        else
-          Post.create_with_indirect_image_link( self, post_data )
+          if Post.is_direct_image_link?(  post_data['data']['url'] )
+            Post.create_with_direct_image_link( self, post_data ) 
+          else
+            Post.create_with_indirect_image_link( self, post_data )
+          end
         end
+      
+      
       end
-      
-      
+    rescue 
+      return nil
     end
   end
   
