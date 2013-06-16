@@ -5,10 +5,26 @@ task :update_morning_posts => :environment do
   end
 end
 
+task :update_brunch_posts => :environment do
+  puts "Inside update brunch posts"
+  puts "Total tags: #{Tag.where(:update_case => UPDATE_CASE[:brunch]).count} "
+  Tag.where(:update_case => UPDATE_CASE[:brunch]).each do |tag|
+    tag.update_posts 
+  end
+end
+
 task :update_afternoon_posts => :environment do
   puts "Inside update afternoon posts"
   puts "Total tags: #{Tag.where(:update_case => UPDATE_CASE[:afternoon]).count} "
   Tag.where(:update_case => UPDATE_CASE[:afternoon]).each do |tag|
+    tag.update_posts 
+  end
+end
+
+task :update_after_lunch_posts => :environment do
+  puts "Inside update after_lunch posts"
+  puts "Total tags: #{Tag.where(:update_case => UPDATE_CASE[:after_lunch]).count} "
+  Tag.where(:update_case => UPDATE_CASE[:after_lunch]).each do |tag|
     tag.update_posts 
   end
 end
