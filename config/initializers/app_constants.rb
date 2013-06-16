@@ -40,5 +40,31 @@ UPDATE_CASE = {
   :evening => 3 ,
   
   :brunch => 4,
-  :after_lunch => 5 
+  :after_lunch => 5 ,
+  
+  
+  :time_1       =>  21    ,
+  :time_2       =>  22    ,
+  :time_3       =>  23    ,
+  :time_4       =>  24    ,
+  :time_5       =>  25    ,
+  :time_6       =>  26    ,
+  :time_7       =>  27    ,
+  :time_8       =>  28    ,
+  :time_9       =>  29    ,
+  :time_10      =>  210   ,
+  :time_11      =>  211   ,
+  :time_12      =>  212   ,
+  :time_14      =>  214   ,
+  :time_15      =>  215   ,
+  :time_16      =>  216   ,
+  :time_17      =>  217   ,
+  :time_18      =>  218   ,
+  :time_19      =>  219   ,
+  :time_20      =>  220   ,
+  :time_21      =>  221   ,
+  :time_22      =>  222   ,
+  :time_23      =>  223   ,
+  :time_24      =>  224
+  
 }

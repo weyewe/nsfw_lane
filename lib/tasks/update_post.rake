@@ -34,3 +34,14 @@ task :update_evening_posts => :environment do
     tag.update_posts 
   end
 end
+
+
+(1..24).each do |x|
+  task_name = "update_time_#{x}"
+  
+  task task_name.to_sym => :environment do
+    Tag.where(:update_case => UPDATE_CASE["time_#{x}".to_sym]).each do |tag|
+      tag.update_posts 
+    end
+  end
+end

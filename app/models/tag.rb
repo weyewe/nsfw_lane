@@ -1,29 +1,17 @@
 =begin
-# morning tag: Hotchickswithtattoos  hairbra, HandBra ,
-  tits, 
-  girlsontheirbacks, ,  , hairypussy , GroupOfNudeGirls , , , 
-  shewantstofuck ,  , upskirt , cellshots , randomsexiness , EWITB, Mooning, Public , onoffceleb, 
-  nippleripple, cat_girls, iWantToFuckHer , ,  , , GonewildAlbums, gonewildhairy,
-  PublicFlashing, happygaps, ,collegesluts,  CollegeAmateurs, nsfw_young, 
-  , , , perfectbabes, 
-  ,  gonewild, 
-  
-#awesome morning
-  nsfw, Nipslips, DrunkGirls, OnOff, nipples, laundryday, happygirls, Christiangirls,
-  camwhores, HappyEmbarrassedGirls,FlashingGirls
-  
-#awesome afternoon
-  cougars, milf , MatureWomen, Unashamed, 
-  
-#awesome evening
-O_Faces, openholes, pink, vagina, analholes, gape, cumsluts, buttsharpies, 
-  
-
-
+# morning tag:   ,  ,
+  , 
+  , ,  ,  ,  , , , 
+   ,  ,  ,  ,  , , ,  , , 
+  , ,  , ,  , , , ,
+  , , ,,  , , 
+  , , , ,  
+  ,  , 
+    
 
 #
-  grool, Stacked, weddingringsshowing , hotwife, Tushy,  TheHangingBoobs, wifesharing,
-  momsgonewild, femalesgonewild, SpreadEagle, 
+  , ,  , , ,  , ,
+  , , , 
   
   
   
