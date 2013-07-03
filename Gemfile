@@ -8,6 +8,8 @@ gem 'rails', '3.2.13'
 gem 'pg'
 
 gem  'httparty'
+gem 'thin'
+
 
 gem 'nokogiri'
 gem 'jbuilder'

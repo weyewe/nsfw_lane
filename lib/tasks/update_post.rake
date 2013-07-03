@@ -40,7 +40,7 @@ end
   task_name = "update_time_#{x}"
   
   task task_name.to_sym => :environment do
-    tags = Tag.where(:update_case => UPDATE_CASE["time_#{x}".to_sym])
+    tags = Tag.where(:update_case => UPDATE_CASE["time_#{x}".to_sym] )
     puts "Total tags: #{tags.count}"
     
     tags.each do |tag|
