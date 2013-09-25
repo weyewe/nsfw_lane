@@ -134,4 +134,9 @@ class Post < ActiveRecord::Base
                   :is_gif => Pic.is_gif_url?( image_url)
     end
   end
+  
+  def delete_object
+    self.pics.each {|x| x.destroy }
+    self.destroy
+  end
 end
