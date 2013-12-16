@@ -140,3 +140,14 @@ class Post < ActiveRecord::Base
     self.destroy
   end
 end
+
+=begin
+  latest_post_id_list = Post.order("id DESC").limit(20).map{|x| x.id }
+  
+  Post.all.each do  |p|
+    next if latest_post_id_list.include?(p.id)
+    p.delete_object
+    
+  end
+  
+=end
