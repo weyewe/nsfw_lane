@@ -1,0 +1,41 @@
+<h1><%= @tag.name %>
+<% @pics.each do |pic| %>
+
+	<!--start: blog -->
+	<div class="blog clearfix">
+		<div class="span6 img-polaroid blog-img" style='text-align:center;'>
+		 
+				<%= image_tag pic  , :style => "max-height: 400px;"%>
+
+				<!-- <img class="" alt="content" src="img/large/1.jpg"> -->
+				<!-- </a> -->
+				<!-- <div class="marker"><i class="icon-bookmark"></i></div>  -->
+		</div>
+	</div><!--end: blog -->
+
+
+
+<% end %>
+
+
+<div class="blog clearfix">
+	<div class="span6 img-polaroid blog-img" style='text-align:center; padding: 20px 0;'>
+		<%#= paginate @posts, :theme => 'twitter-bootstrap' %>
+	 <% if not @last_reddit_id.present? %>
+	
+		<%= link_to "NextPage", tag_url(@tag ), :class => "btn"   %>
+	
+	
+		<%#= link_to tag_url(@tag),  'Next Page', :theme => 'twitter-bootstrap', :style =>"border: 1px solid rgb(220,220,220); padding: 10px 5px; font-weight: bold;", :after => "Awesome" %>
+		
+	<% else %>
+	<%= link_to "NextPage", tag_url(@tag,:after => @last_reddit_id), :class => "btn"   %>
+		<%#= link_to tag_url(@tag),  'Next Page', :theme => 'twitter-bootstrap', :style =>"border: 1px solid rgb(220,220,220); padding: 10px 5px; font-weight: bold;", :after =>  @last_reddit_id %>
+	<% end %> 
+	</div>
+</div><!--end: blog -->
+
+
+
+
+

@@ -2,6 +2,8 @@ NsfwDaily::Application.routes.draw do
   root :to => 'posts#index'
   resources :posts 
   
+  resources :tags 
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

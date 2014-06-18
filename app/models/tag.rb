@@ -105,6 +105,56 @@ class Tag < ActiveRecord::Base
     end
   end
   
+  
+  
+  def extract_latest_posts(after)
+    if after.present? and after.length != 0 
+      url = "http://www.reddit.com/r/#{self.name}/hot.json?limit=20&after=#{after}&format=json"
+    else
+      url = "http://www.reddit.com/r/#{self.name}/hot.json?limit=20&format=json"
+    end
+    response = HTTParty.get( url )
+     
+    ActiveSupport::JSON.decode( response.body )
+  end
+  
+  
+  def extract_content( after ) 
+    after_reddit_name = nil 
+    result = [] 
+    begin
+      parsed_json = self.extract_latest_posts(after) 
+    
+    
+      if parsed_json['data']['children'].length != 0
+        # update the last extracted reddit post 
+        first_data = parsed_json['data']['children'].last
+        after_reddit_name = first_data['data']['name'] 
+      
+      
+        parsed_json['data']['children'].each do |post_data|
+          next if Post.find_by_reddit_name( post_data['data']['name'])
+          
+          if Post.is_direct_image_link?(  post_data['data']['url'] )
+            result <<  post_data['data']['url']   
+          end
+        end
+      
+      
+      end
+    rescue 
+      return nil
+    end
+    
+    return [
+        result,
+        after_reddit_name
+      ]
+    
+    
+    
+    
+  end
    
 
 
