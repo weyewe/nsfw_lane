@@ -14,7 +14,7 @@ class Post < ActiveRecord::Base
   
   
   def self.is_direct_image_link?(url)
-    matching = url.match /\.(svg|jpe?g|png|gif)(?:[?#].*)?$|(?:imgur\.com)\/([^?#\/.]*)(?:[?#].*)?(?:\/)?$/ 
+    matching = url.match /\.(svg|jpe?g|png)(?:[?#].*)?$|(?:imgur\.com)\/([^?#\/.]*)(?:[?#].*)?(?:\/)?$/ 
       
     if (matching and matching[1])   # // normal image link
       return true
