@@ -109,9 +109,9 @@ class Tag < ActiveRecord::Base
   
   def extract_latest_posts(after)
     if after.present? and after.length != 0 
-      url = "http://www.reddit.com/r/#{self.name}/hot.json?limit=20&after=#{after}&format=json"
+      url = "http://www.reddit.com/r/#{self.name}/hot.json?limit=50&after=#{after}&format=json"
     else
-      url = "http://www.reddit.com/r/#{self.name}/hot.json?limit=20&format=json"
+      url = "http://www.reddit.com/r/#{self.name}/hot.json?limit=50&format=json"
     end
     response = HTTParty.get( url )
      

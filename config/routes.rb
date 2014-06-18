@@ -1,5 +1,5 @@
 NsfwDaily::Application.routes.draw do
-  root :to => 'posts#index'
+  root :to => 'home#index'
   resources :posts 
   
   resources :tags 
