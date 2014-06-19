@@ -143,7 +143,7 @@ class Tag < ActiveRecord::Base
       
       end
     rescue 
-      return nil
+      return [result, after_reddit_name]
     end
     
     return [
